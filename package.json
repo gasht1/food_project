@@ -14,7 +14,9 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "ts-loader": "^9.3.0"
   }
 }
