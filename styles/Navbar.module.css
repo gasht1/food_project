@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .item{
     flex: 1;
@@ -76,4 +78,16 @@
 .logo{
     margin: 20px;
     color: #d1411e;
+}
+
+
+@media (max-width: 480px) {
+    .item:nth-child(2) {
+        display: none;
+    }
+    .item:nth-child(1){
+        flex: 3;
+    }
+
+    
 }
