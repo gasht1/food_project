@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   }
   if (method === "PUT") {
     try {
-      const product = await Product.create(req.body);
+      const product = await Product.findByIdAndUpdate(id,req.body);
 
       res.status(201).json(product);
     } catch (error) {
@@ -26,9 +26,9 @@ export default async function handler(req, res) {
   }
   if (method === "DELETE") {
     try {
-      const product = await Product.create(req.body);
+      await Product.findByIdAndDelete(id);
 
-      res.status(201).json(product);
+      res.status(200).json("the product has been deleted");
     } catch (error) {
       res.status(500).json(error);
     }

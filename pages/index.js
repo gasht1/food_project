@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Featured from "../component/featured";
 import PizzaList from "../component/PizzaList";
+ 
 
 export default function Home({ pizzaList }) {
   return (
