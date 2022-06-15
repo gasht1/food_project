@@ -48,6 +48,7 @@
     color: white;
     list-style: none;
     align-items: center;
+    cursor: pointer;
 }
 .listItem{
     margin: 20px;

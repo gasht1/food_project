@@ -4,11 +4,9 @@ import { useState } from "react";
 import styles from "../../styles/Admin.module.css";
 
 const Index = ({ orders, products }) => {
-  
   const [orderLists, setOrderList] = useState(orders);
   const [pizzaList, setPizzaList] = useState(products);
   const status = ["preparing", "on the way", "delivered"];
-
 
   const handleDelete = async (id) => {
     // console.log(id);
@@ -39,7 +37,7 @@ const Index = ({ orders, products }) => {
     }
   };
 
-  if(!orderLists || !pizzaList) return <h1>Loading....</h1>
+  if (!orderLists || !pizzaList) return <h1>Loading....</h1>;
 
   return (
     <div className={styles.container}>
@@ -145,4 +143,3 @@ export const getServerSideProps = async (ctx) => {
 };
 
 export default Index;
-
